@@ -1,6 +1,6 @@
 var express = require("express");
 var app = express();
-var {AllGroundhogs} = require("./main.js");
+var {Groundhog} = require("./main.js");
 var mysql = require("mysql");
 
 app.get("/", (req, resp)=>{
@@ -11,7 +11,11 @@ app.get("/", (req, resp)=>{
 app.get("/submit/:moreWinter/:username", (req,resp)=>{
   var moreWinter = req.params.moreWinter;
   var username = req.params.username;
-  resp.send(["Success"]);
+  var query = `INSERT INTO Votes(username,vote) VALUES ("${username}",${moreWinter})`
+  console.log(query)
+  runSQLQuery(query,(result)=>{
+    resp.send(["Success"])
+  });
 })
 
 function runSQLQuery(query, callback){
