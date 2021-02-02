@@ -1,7 +1,7 @@
-class AllGroundhogs{
+class Groundhog{
   constructor(username){
     this.username = username;
   }
 }
 
-module.exports = {AllGroundhogs}
+module.exports = {Groundhog}
