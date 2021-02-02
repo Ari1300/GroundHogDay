@@ -7,6 +7,11 @@ app.get("/", (req, resp)=>{
   resp.send("It worked");
 });
 
+app.get("/returnAll", (req, resp)=>{
+
+  resp.send("All Submissions")
+});
+
 app.get("/submit/:moreWinter/:username", (req,resp)=>{
   var moreWinter = req.params.moreWinter;
   var username = req.params.username;
@@ -28,6 +33,7 @@ function runSQLQuery(query, callback){
     });
   });
 }
+
 
 app.listen(1985)
 console.log("Listening on port 1985");
