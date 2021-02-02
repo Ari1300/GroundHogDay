@@ -1,0 +1,22 @@
+{
+  "name": "groundhogday",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ari1300/GroundHogDay.git"
+  },
+  "author": "Ariana MacArthur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ari1300/GroundHogDay/issues"
+  },
+  "homepage": "https://github.com/Ari1300/GroundHogDay#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
