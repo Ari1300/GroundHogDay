@@ -3,9 +3,13 @@ var app = express();
 var {Groundhog} = require("./main.js");
 var mysql = require("mysql");
 
+
+
 app.get("/", (req, resp)=>{
-  
-  resp.send("It worked");
+  var query = `SELECT * from Votes`
+  runSQLQuery(query,(result)=>{
+    resp.send([result])
+  });
 });
 
 app.get("/submit/:moreWinter/:username", (req,resp)=>{
