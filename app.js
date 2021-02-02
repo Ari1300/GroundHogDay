@@ -8,7 +8,7 @@ app.get("/", (req, resp)=>{
 });
 
 app.get("/returnAll", (req, resp)=>{
-
+  
   resp.send("All Submissions")
 });
 
