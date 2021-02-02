@@ -1,5 +1,6 @@
 var express = require("express");
 var app = express();
+var {AllGroundhogs} = require("./main.js");
 
 app.get("/", (req, resp)=>{
   resp.send("It worked");
