@@ -4,12 +4,8 @@ var {AllGroundhogs} = require("./main.js");
 var mysql = require("mysql");
 
 app.get("/", (req, resp)=>{
-  resp.send("It worked");
-});
-
-app.get("/returnAll", (req, resp)=>{
   
-  resp.send("All Submissions")
+  resp.send("It worked");
 });
 
 app.get("/submit/:moreWinter/:username", (req,resp)=>{
