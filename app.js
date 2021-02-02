@@ -13,7 +13,8 @@ app.get("/returnAll", (req, resp)=>{
 });
 
 app.get("/submit/:moreWinter/:username", (req,resp)=>{
-
+  var moreWinter = req.params.moreWinter;
+  var username = req.params.username;
   resp.send(["Success"]);
 })
 
